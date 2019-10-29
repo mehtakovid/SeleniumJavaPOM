@@ -6,12 +6,7 @@
       <class name="boonSupplyTests.BoonSupplyTests">
         <methods>
           <include name="DriverInitialization"/>
-          <include name="StartNewFundRaiserWithNewUser" invocation-numbers="0 1 2"/>
-          <include name="CreateNewAccount"/>
           <include name="teardown"/>
-          <include name="CancelMyAccount" invocation-numbers="0 1"/>
-          <include name="UpdateAccountInformation"/>
-          <include name="LoginToBoonSupply"/>
           <include name="CloseFundRaiser" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- boonSupplyTests.BoonSupplyTests -->

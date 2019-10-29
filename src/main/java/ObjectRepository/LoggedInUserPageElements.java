@@ -10,7 +10,9 @@ public class LoggedInUserPageElements {
 		public By UserEmail = By.xpath("//input[@name='user[email]']");
 		public By UserPassword = By.xpath("//input[@name='user[password]']");
 		public By LoginButton = By.xpath("//input[@value='Log in']");
+		public By ErrorMessage = By.xpath("//div[@class='alert alert-danger']");
 		
+		public By fund_alreadyClosed = By.xpath("//span[text()='Closed']");
 		public By ViewFundraiser = By.xpath("//span[text()='VIEW FUNDRAISER']");
 		public By CloseFundraiser = By.xpath("//a[text()='CLOSE FUNDRAISER']");
 		public By CloseYourFundraiser2 = By.xpath("//input[@id='close-process-submit']");

@@ -25,13 +25,33 @@ public class LoggedInUserPage extends LoggedInUserPageElements {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(UserEmail)).sendKeys(Username);
 		driver.findElement(UserPassword).sendKeys(Password);
 		driver.findElement(LoginButton).click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if(!driver.findElements(ErrorMessage).isEmpty()) {
+			Assert.fail("User Does not Exist in the System.");
+		}else {
+			System.out.println("Log in Successful for existing user.");
+		}
 	}
 	
 	public void viewAndCloseFundraiser() {
+		if(!driver.findElements(fund_alreadyClosed).isEmpty()) {
+			Assert.fail("This fund is already closed.");
+		}else {
 		wait.until(ExpectedConditions.elementToBeClickable(ViewFundraiser)).click();
+		}
+		if(driver.findElements(CloseFundraiser).isEmpty()) {
+			Assert.fail("The fund is not eligible to be closed. Start date in Future.");
+		}else {
 		wait.until(ExpectedConditions.elementToBeClickable(CloseFundraiser)).click();
 		wait.until(ExpectedConditions.elementToBeClickable(CloseYourFundraiser2)).click();
 		Assert.assertEquals(wait.until(ExpectedConditions.visibilityOfElementLocated(closetext)).isDisplayed(), true);
+		}
+		
 	}
 	
 	public void CancelMyAccount() {
@@ -39,12 +59,16 @@ public class LoggedInUserPage extends LoggedInUserPageElements {
 		wait.until(ExpectedConditions.elementToBeClickable(LoginImage)).click();
 		//action.moveToElement(driver.findElement(LoginImage)).moveToElement(driver.findElement(YourAccount)).click().build().perform();
 		wait.until(ExpectedConditions.elementToBeClickable(CancelYourAccount)).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
+		}
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -37,7 +37,7 @@ public class BoonSupplyTests {
 	public void DriverInitialization() {
 		System.setProperty("webdriver.chrome.driver", ".//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver,60);
+		wait = new WebDriverWait(driver,20);
 		driver.get("https://www.boonsupply.com/");
 		driver.manage().window().maximize();
 		((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");

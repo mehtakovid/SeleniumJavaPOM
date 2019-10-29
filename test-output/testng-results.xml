@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-27T21:46:45 IST" name="Default suite" finished-at="2019-10-27T21:48:01 IST" duration-ms="76667">
+  <suite started-at="2019-10-29T23:44:57 IST" name="BoonSupplySuite" finished-at="2019-10-29T23:56:07 IST" duration-ms="669749">
     <groups>
     </groups>
-    <test started-at="2019-10-27T21:46:45 IST" name="Default test" finished-at="2019-10-27T21:48:01 IST" duration-ms="76667">
+    <test started-at="2019-10-29T23:44:57 IST" name="BoonSupplyTest" finished-at="2019-10-29T23:56:07 IST" duration-ms="669749">
       <class name="boonSupplyTests.BoonSupplyTests">
-        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:46:46 IST" name="DriverInitialization" finished-at="2019-10-27T21:46:56 IST" duration-ms="10306" status="PASS">
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:44:58 IST" name="DriverInitialization" finished-at="2019-10-29T23:45:09 IST" duration-ms="11191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitialization -->
-        <test-method signature="LoginToBoonSupply(java.lang.String, java.lang.String)[pri:4, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:46:56 IST" name="LoginToBoonSupply" data-provider="readDataForTestCase4" finished-at="2019-10-27T21:47:06 IST" duration-ms="9646" status="PASS">
+        <test-method signature="SearchAFundraiser()[pri:1, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:45:09 IST" name="SearchAFundraiser" finished-at="2019-10-29T23:45:22 IST" duration-ms="13188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchAFundraiser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:45:22 IST" name="teardown" finished-at="2019-10-29T23:45:24 IST" duration-ms="1772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:45:24 IST" name="DriverInitialization" finished-at="2019-10-29T23:45:32 IST" duration-ms="8790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="AddA25DollarItemInCart()[pri:2, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:45:32 IST" name="AddA25DollarItemInCart" finished-at="2019-10-29T23:45:48 IST" duration-ms="15022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddA25DollarItemInCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:45:48 IST" name="teardown" finished-at="2019-10-29T23:45:49 IST" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:45:49 IST" name="DriverInitialization" finished-at="2019-10-29T23:46:02 IST" duration-ms="13070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="AddMultipleItemsInCart()[pri:3, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:02 IST" name="AddMultipleItemsInCart" finished-at="2019-10-29T23:46:17 IST" duration-ms="15069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultipleItemsInCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:17 IST" name="teardown" finished-at="2019-10-29T23:46:18 IST" duration-ms="1372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:20 IST" name="DriverInitialization" finished-at="2019-10-29T23:46:30 IST" duration-ms="10177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="LoginToBoonSupply(java.lang.String, java.lang.String)[pri:4, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:30 IST" name="LoginToBoonSupply" data-provider="readDataForTestCase4" finished-at="2019-10-29T23:46:41 IST" duration-ms="10446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +63,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToBoonSupply -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:47:06 IST" name="teardown" finished-at="2019-10-27T21:47:08 IST" duration-ms="1671" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:41 IST" name="teardown" finished-at="2019-10-29T23:46:42 IST" duration-ms="1454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:47:08 IST" name="DriverInitialization" finished-at="2019-10-27T21:47:16 IST" duration-ms="8533" status="PASS">
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:42 IST" name="DriverInitialization" finished-at="2019-10-29T23:46:52 IST" duration-ms="9926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitialization -->
-        <test-method signature="CreateNewAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:47:16 IST" name="CreateNewAccount" data-provider="readDataForTestCase5" finished-at="2019-10-27T21:47:32 IST" duration-ms="15586" status="PASS">
+        <test-method signature="CreateNewAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:46:52 IST" name="CreateNewAccount" data-provider="readDataForTestCase5" finished-at="2019-10-29T23:47:08 IST" duration-ms="15913" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,15 +97,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewAccount -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:47:32 IST" name="teardown" finished-at="2019-10-27T21:47:34 IST" duration-ms="1656" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:47:08 IST" name="teardown" finished-at="2019-10-29T23:47:09 IST" duration-ms="1525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:47:34 IST" name="DriverInitialization" finished-at="2019-10-27T21:47:43 IST" duration-ms="9161" status="PASS">
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:47:10 IST" name="DriverInitialization" finished-at="2019-10-29T23:47:20 IST" duration-ms="10356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitialization -->
-        <test-method signature="UpdateAccountInformation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:47:43 IST" name="UpdateAccountInformation" data-provider="readDataForTestCase6" finished-at="2019-10-27T21:48:00 IST" duration-ms="16901" status="PASS">
+        <test-method signature="UpdateAccountInformation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:47:20 IST" name="UpdateAccountInformation" data-provider="readDataForTestCase6" finished-at="2019-10-29T23:47:39 IST" duration-ms="18627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,11 +141,879 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateAccountInformation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@45018215]" started-at="2019-10-27T21:48:00 IST" name="teardown" finished-at="2019-10-27T21:48:01 IST" duration-ms="1595" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:47:39 IST" name="teardown" finished-at="2019-10-29T23:47:40 IST" duration-ms="1566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:47:40 IST" name="DriverInitialization" finished-at="2019-10-29T23:47:50 IST" duration-ms="9292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="StartNewFundRaiserWithNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:47:50 IST" name="StartNewFundRaiserWithNewUser" data-provider="readDataForTestCase7" finished-at="2019-10-29T23:48:19 IST" duration-ms="29762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dwayne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Wade]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9989099878]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[dwaynewade@getnada.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[94107]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Cheerleading]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Public]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[October]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[November]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[OnlineOnly]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Myself]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Group]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Creative Art]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartNewFundRaiserWithNewUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:48:19 IST" name="teardown" finished-at="2019-10-29T23:48:21 IST" duration-ms="1847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:48:21 IST" name="DriverInitialization" finished-at="2019-10-29T23:48:30 IST" duration-ms="9028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="StartNewFundRaiserWithNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:48:30 IST" name="StartNewFundRaiserWithNewUser" data-provider="readDataForTestCase7" finished-at="2019-10-29T23:49:17 IST" duration-ms="46451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dwayne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9989099879]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[dwaynejohn@getnada.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[94107]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Cheerleading]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Public]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[November]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[December]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[OnlineOnly]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Myself]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Individual]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Creative Art]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartNewFundRaiserWithNewUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:49:17 IST" name="teardown" finished-at="2019-10-29T23:49:18 IST" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:49:18 IST" name="DriverInitialization" finished-at="2019-10-29T23:49:28 IST" duration-ms="9479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="StartNewFundRaiserWithNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:49:28 IST" name="StartNewFundRaiserWithNewUser" data-provider="readDataForTestCase7" finished-at="2019-10-29T23:49:57 IST" duration-ms="29541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dwayne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Scott]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9989099881]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[dwaynescott@getnada.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[94107]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Cheerleading]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Public]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[December]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[April]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[OnlineOnly]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Myself]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Group]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[School & Education]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartNewFundRaiserWithNewUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:49:57 IST" name="teardown" finished-at="2019-10-29T23:49:59 IST" duration-ms="1645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:49:59 IST" name="DriverInitialization" finished-at="2019-10-29T23:50:09 IST" duration-ms="9632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="StartNewFundRaiserWithNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:50:09 IST" name="StartNewFundRaiserWithNewUser" data-provider="readDataForTestCase7" finished-at="2019-10-29T23:50:40 IST" duration-ms="31775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dwayne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jhonson]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9989099881]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[dwaynejhonson@getnada.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[94107]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Cheerleading]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Public]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[December]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[January]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[OnlineOnly]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[Myself]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Indivdual]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[School & Education]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartNewFundRaiserWithNewUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:50:40 IST" name="teardown" finished-at="2019-10-29T23:50:42 IST" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:50:42 IST" name="DriverInitialization" finished-at="2019-10-29T23:50:52 IST" duration-ms="9837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CloseFundRaiser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:50:52 IST" name="CloseFundRaiser" data-provider="readDataForTestCase8" finished-at="2019-10-29T23:51:29 IST" duration-ms="37043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynewade@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFundRaiser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:51:29 IST" name="teardown" finished-at="2019-10-29T23:51:31 IST" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:51:31 IST" name="DriverInitialization" finished-at="2019-10-29T23:51:40 IST" duration-ms="9116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CloseFundRaiser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:51:40 IST" name="CloseFundRaiser" data-provider="readDataForTestCase8" finished-at="2019-10-29T23:51:59 IST" duration-ms="19179" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynejohn@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User Does not Exist in the System.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User Does not Exist in the System.
+at org.testng.Assert.fail(Assert.java:97)
+at boonSupplyPage.LoggedInUserPage.existingUserSignIn(LoggedInUserPage.java:35)
+at boonSupplyTests.BoonSupplyTests.CloseFundRaiser(BoonSupplyTests.java:243)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFundRaiser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:51:59 IST" name="teardown" finished-at="2019-10-29T23:52:01 IST" duration-ms="1839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:52:01 IST" name="DriverInitialization" finished-at="2019-10-29T23:52:10 IST" duration-ms="9165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CloseFundRaiser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:52:10 IST" name="CloseFundRaiser" data-provider="readDataForTestCase8" finished-at="2019-10-29T23:52:44 IST" duration-ms="33647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynescott@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFundRaiser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:52:44 IST" name="teardown" finished-at="2019-10-29T23:52:45 IST" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:52:45 IST" name="DriverInitialization" finished-at="2019-10-29T23:52:54 IST" duration-ms="9093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CloseFundRaiser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:52:54 IST" name="CloseFundRaiser" data-provider="readDataForTestCase8" finished-at="2019-10-29T23:53:27 IST" duration-ms="32844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynejhonson@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFundRaiser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:53:27 IST" name="teardown" finished-at="2019-10-29T23:53:29 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:53:29 IST" name="DriverInitialization" finished-at="2019-10-29T23:53:39 IST" duration-ms="10215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CancelMyAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:53:39 IST" name="CancelMyAccount" data-provider="readDataForTestCase9" finished-at="2019-10-29T23:54:09 IST" duration-ms="29793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynewade@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CancelMyAccount -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:54:09 IST" name="teardown" finished-at="2019-10-29T23:54:11 IST" duration-ms="1772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:54:11 IST" name="DriverInitialization" finished-at="2019-10-29T23:54:21 IST" duration-ms="10527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CancelMyAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:54:21 IST" name="CancelMyAccount" data-provider="readDataForTestCase9" finished-at="2019-10-29T23:54:39 IST" duration-ms="17774" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynejohn@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User Does not Exist in the System.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User Does not Exist in the System.
+at org.testng.Assert.fail(Assert.java:97)
+at boonSupplyPage.LoggedInUserPage.existingUserSignIn(LoggedInUserPage.java:35)
+at boonSupplyTests.BoonSupplyTests.CancelMyAccount(BoonSupplyTests.java:270)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CancelMyAccount -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:54:39 IST" name="teardown" finished-at="2019-10-29T23:54:41 IST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:54:41 IST" name="DriverInitialization" finished-at="2019-10-29T23:54:50 IST" duration-ms="9325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CancelMyAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:54:50 IST" name="CancelMyAccount" data-provider="readDataForTestCase9" finished-at="2019-10-29T23:55:20 IST" duration-ms="30230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynescott@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CancelMyAccount -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:55:20 IST" name="teardown" finished-at="2019-10-29T23:55:22 IST" duration-ms="1719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="DriverInitialization()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:55:22 IST" name="DriverInitialization" finished-at="2019-10-29T23:55:31 IST" duration-ms="9287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitialization -->
+        <test-method signature="CancelMyAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:55:31 IST" name="CancelMyAccount" data-provider="readDataForTestCase9" finished-at="2019-10-29T23:56:05 IST" duration-ms="33945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dwaynejhonson@getnada.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[random@124]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CancelMyAccount -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:boonSupplyTests.BoonSupplyTests@30b7c004]" started-at="2019-10-29T23:56:05 IST" name="teardown" finished-at="2019-10-29T23:56:07 IST" duration-ms="1878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- boonSupplyTests.BoonSupplyTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- BoonSupplyTest -->
+  </suite> <!-- BoonSupplySuite -->
 </testng-results>

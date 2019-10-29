@@ -92,10 +92,10 @@ public class FundraiserInformationPage extends FundraiserInformationPageElements
 		Actions action = new Actions(driver);
 		driver.findElement(fundAddress).click();
 		action.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
+		driver.findElement(fundEmail).click();
 		driver.findElement(fundEmail).sendKeys(email);
 		driver.findElement(fundPhone).sendKeys(Phone);
 		driver.findElement(NotWorkingwithAnyConsultants).click();
-		driver.findElement(fundEmail).click();
 		driver.findElement(NextButton).click();
 		
 		

@@ -20,7 +20,6 @@ public class CreateFundraiserPage extends CreateFundraiserPageElements {
 	public String CreateFundraiserPageOne(String CollectOrderOnPaper, String TrackFundraisingParticipants) {
 			if(CollectOrderOnPaper.equalsIgnoreCase("Yes")) {
 				
-				System.out.println("here");
 				wait.until(ExpectedConditions.visibilityOfElementLocated(CollectOrderOnPaper_Yes)).click();
 				wait.until(ExpectedConditions.visibilityOfElementLocated(SelectStandardButton)).click();
 				return "SelectStandard";
