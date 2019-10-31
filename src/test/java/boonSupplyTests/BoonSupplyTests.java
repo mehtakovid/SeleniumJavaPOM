@@ -3,15 +3,11 @@ package boonSupplyTests;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import Utilities.DataReader;
 import Utilities.TakeAScreenshot;
@@ -28,20 +24,7 @@ import boonSupplyPage.CreateFundraiserPage;
 import boonSupplyPage.FundRaiserCategoryPage;
 import boonSupplyPage.FundraiserInformationPage;
 
-public class BoonSupplyTests {
-	
-	public static WebDriver driver;
-	public static WebDriverWait wait;
-	
-	@BeforeMethod
-	public void DriverInitialization() {
-		System.setProperty("webdriver.chrome.driver", ".//Drivers//chromedriver.exe");
-		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver,20);
-		driver.get("https://www.boonsupply.com/");
-		driver.manage().window().maximize();
-		((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-	}
+public class BoonSupplyTests extends BaseConfigurationClass {
 	
 	
 	/****
@@ -52,15 +35,18 @@ public class BoonSupplyTests {
 	@Test(priority=1,enabled=true)
 	public void SearchAFundraiser() throws Exception {
 		try {
+		logger = extent.startTest("SearchAFundraiser");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.ClickOnFindAFundRaiser();
 		FundRaiserCategoryPage TS2 = new FundRaiserCategoryPage(driver, wait);
 		TS2.SearchTheFundRaiser("California");
+		logger.log(LogStatus.PASS, "Search FundRaiser Passed Successfully.");
 		}
 		catch(Exception E) {
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality Manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-1");
+			logger.log(LogStatus.FAIL, "Search FundRaiser Passed Successfully.");
 		}
 		
 	}
@@ -72,19 +58,21 @@ public class BoonSupplyTests {
 	@Test(priority=2,enabled=true)
 	public void AddA25DollarItemInCart() throws Exception {
 		try {
+		logger = extent.startTest("AddA25DollarItemInCart");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.GoTo25DollarGiftCategory();
 		ProductListPage TS2 = new ProductListPage(driver,wait);
 		TS2.SelectA25$GiftItem(4);
 		ProductDetailPage TS3 = new ProductDetailPage(driver, wait);
 		TS3.AddTheSelectedProductToCart();
+		logger.log(LogStatus.PASS, "Add a 25$ Item Test Passed Successfully.");
 		}
 		catch(Exception E) {
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality Manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-2");
-		}
-		
+			logger.log(LogStatus.FAIL, "Add a 25$ Item Test Failed.");
+		}	
 	}
 	
 	/***
@@ -93,17 +81,20 @@ public class BoonSupplyTests {
 	@Test(priority=3,enabled=true)
 	public void AddMultipleItemsInCart() throws Exception {
 		try {
+		logger = extent.startTest("AddMultipleItemsInCart");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.GoToSportsCollection();
 		ProductListPage TS2 = new ProductListPage(driver,wait);
 		TS2.SelectSportsItems(5);
 		ProductDetailPage TS3 = new ProductDetailPage(driver, wait);
 		TS3.AddMultipleItemInCart(6);
+		logger.log(LogStatus.PASS, "AddMultipleItemsInCart Test Passed Successfully.");
 		}
 		catch(Exception E) {
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-3");
+			logger.log(LogStatus.FAIL, "AddMultipleItemsInCart Test Failed.");
 		}
 		
 	}
@@ -116,15 +107,18 @@ public class BoonSupplyTests {
 	@Test(priority=4,enabled=true,dataProvider="readDataForTestCase4")
 	public void LoginToBoonSupply(String UserEmail, String Password) throws Exception {
 		try {
+		logger = extent.startTest("LoginToBoonSupply");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.ClickOnLogin();
 		LoginPage TS2 = new LoginPage(driver,wait);
 		TS2.EnterCredentials(UserEmail, Password);
+		logger.log(LogStatus.PASS, "LoginToBoonSupply Test Passed Successfully.");
 		}
 		catch(Exception E){
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-4");
+			logger.log(LogStatus.FAIL, "LoginToBoonSupply Test Failed.");
 		}
 		
 	}
@@ -137,17 +131,20 @@ public class BoonSupplyTests {
 	@Test(priority=5,enabled=true,dataProvider="readDataForTestCase5")
 	public void CreateNewAccount(String FirstName, String LastName, String UserEmail, String Password) throws Exception {
 		try {
+		logger = extent.startTest("CreateNewAccount");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.ClickOnLogin();
 		LoginPage TS2 = new LoginPage(driver,wait);
 		TS2.CreateAnAccount();
 		CreateAccountPage TS3 = new CreateAccountPage(driver,wait);
 		TS3.CreateNewAccount(FirstName, LastName, UserEmail, Password);
+		logger.log(LogStatus.PASS, "CreateNewAccount Test Passed Successfully.");
 		}
 		catch(Exception E) {
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-5");
+			logger.log(LogStatus.FAIL, "CreateNewAccount Test Failed.");
 		}
 				
 	}
@@ -161,6 +158,7 @@ public class BoonSupplyTests {
 	public void UpdateAccountInformation(String UserEmail, String Password, String Street, String City, 
 			String State, String zipcode) throws Exception {
 		try {
+		logger = extent.startTest("UpdateAccountInformation");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.ClickOnLogin();
 		LoginPage TS2 = new LoginPage(driver,wait);
@@ -168,11 +166,13 @@ public class BoonSupplyTests {
 		TS1.GoToAccountDetails();
 		AccountInformationPage TS3 = new AccountInformationPage(driver,wait);
 		TS3.UpdateAccountInformation(Street, City, State, zipcode);
+		logger.log(LogStatus.PASS, "UpdateAccountInformation Test Passed Successfully.");
 		}
 		catch(Exception E) {
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-6");
+			logger.log(LogStatus.FAIL, "UpdateAccountInformation Test Failed.");
 		}
 			
 	}
@@ -192,6 +192,7 @@ public class BoonSupplyTests {
 			String StartDate, String EndMonth, String EndDate, String FundraiserType, String WhoIsItFor, String GrpOrInd, 
 			String CatalogRequired, String FundraisingFocus) throws Exception {
 			try {
+				logger = extent.startTest("StartNewFundRaiserWithNewUser");
 				HomePage TS1 = new HomePage(driver, wait);
 				CreateFundraiserPage TS2 = new CreateFundraiserPage(driver, wait);
 				ChairmanRegistrationPage TS3 = new ChairmanRegistrationPage(driver,wait);
@@ -205,6 +206,7 @@ public class BoonSupplyTests {
 							TS5.FundRaiserInformation(FundraiserSize, FundraiserCatalog, StartMonth, StartDate, EndMonth, EndDate);
 							TS5.FundraiserPrograms(FundraiserType);
 							TS5.acceptTOSToConfirmFundraiserCreation();
+							logger.log(LogStatus.PASS, "StartNewFundRaiserWithNewUser Test Passed Successfully.");
 						}
 				}else {
 					TS3.OnlineChairmanRegistration(firstName, lastName, email, password);
@@ -213,12 +215,14 @@ public class BoonSupplyTests {
 					TS5.EnterFundraiserGoals();
 					TS5.FundraiserStyle(GrpOrInd,CatalogRequired);
 					TS5.fundraisingFocus(FundraisingFocus);
+					logger.log(LogStatus.PASS, "StartNewFundRaiserWithNewUser Test Passed Successfully.");
 				}
 			}
 			catch(Exception E) {
 					E.printStackTrace();
 					Assert.fail("There is an Exception. Please check the functionality manually.");
 					TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-7");
+					logger.log(LogStatus.FAIL, "StartNewFundRaiserWithNewUser Test Failed.");
 			}
 				
 	}
@@ -235,19 +239,21 @@ public class BoonSupplyTests {
 	public void CloseFundRaiser(String CollectOrderOnPaper, String TrackFundraisingParticipants, 
 			String Username, String Password) throws Exception {
 		try {
+		logger = extent.startTest("CloseFundRaiser");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.StartAFundraiser();
 		CreateFundraiserPage TS2 = new CreateFundraiserPage(driver, wait);
 		TS2.CreateFundraiserPageOne(CollectOrderOnPaper, TrackFundraisingParticipants);
-		LoggedInUserPage TS3 = new LoggedInUserPage(driver, wait);
+		LoggedInUserPage TS3 = new LoggedInUserPage(driver, wait,logger);
 		TS3.existingUserSignIn(Username, Password);
 		TS3.viewAndCloseFundraiser();
+		logger.log(LogStatus.PASS, "CloseFundRaiser Test Passed Successfully.");
 		}
 		catch(Exception E) {
-			
 				E.printStackTrace();
 				Assert.fail("There is an Exception. Please check the functionality manually.");
 				TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-8");
+				logger.log(LogStatus.FAIL, "CloseFundRaiser Test Failed.");
 			
 		}
 	}
@@ -262,26 +268,23 @@ public class BoonSupplyTests {
 	public void CancelMyAccount(String CollectOrderOnPaper, String TrackFundraisingParticipants, 
 			String Username, String Password) throws Exception{
 		try {
+		logger = extent.startTest("CancelMyAccount");
 		HomePage TS1 = new HomePage(driver, wait);
 		TS1.StartAFundraiser();
 		CreateFundraiserPage TS2 = new CreateFundraiserPage(driver, wait);
 		TS2.CreateFundraiserPageOne(CollectOrderOnPaper, TrackFundraisingParticipants);
-		LoggedInUserPage TS3 = new LoggedInUserPage(driver, wait);
+		LoggedInUserPage TS3 = new LoggedInUserPage(driver, wait,logger);
 		TS3.existingUserSignIn(Username, Password);
 		TS3.CancelMyAccount();
+		logger.log(LogStatus.PASS, "CancelMyAccount Test Passed Successfully.");
 		}
 		catch(Exception E) {
 			E.printStackTrace();
 			Assert.fail("There is an Exception. Please check the functionality manually.");
 			TakeAScreenshot.CaptureScreenshot(driver,".//test-output//Screenshots//TestCase-9");
+			logger.log(LogStatus.FAIL, "CancelMyAccount Test Failed.");
 		}
 	}
 	
-	@AfterMethod
-	public void teardown() {
-		driver.quit();
-		driver=null;
-		wait=null;
-	}
 
 }

@@ -5,9 +5,11 @@
     <classes>
       <class name="boonSupplyTests.BoonSupplyTests">
         <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
           <include name="DriverInitialization"/>
+          <include name="SearchAFundraiser"/>
           <include name="teardown"/>
-          <include name="CloseFundRaiser" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- boonSupplyTests.BoonSupplyTests -->
     </classes>
