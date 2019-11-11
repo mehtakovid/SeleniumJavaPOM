@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BoonSupplyAutomation]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BoonSupplyTest(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="boonSupplyTests.ShopforItemsTest">
+        <methods>
+          <include name="GetTrendingItemsforShopping"/>
+        </methods>
+      </class> <!-- boonSupplyTests.ShopforItemsTest -->
+      <class name="boonSupplyTests.AccountTests">
+        <methods>
+          <include name="LoginToBoonSupply" invocation-numbers="0 1"/>
+          <include name="CreateNewAccount" invocation-numbers="0"/>
+          <include name="UpdateAccountInformation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- boonSupplyTests.AccountTests -->
+      <class name="boonSupplyTests.SearchFundraiserTest">
+        <methods>
+          <include name="getTheNumberOfFundraiser" invocation-numbers="0 1 2 3 4"/>
+          <include name="GetFeaturedFundRaisers"/>
+          <include name="SearchAFundraiser" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- boonSupplyTests.SearchFundraiserTest -->
+    </classes>
+  </test> <!-- BoonSupplyTest(failed) -->
+</suite> <!-- Failed suite [BoonSupplyAutomation] -->

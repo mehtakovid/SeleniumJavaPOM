@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BoonSupplySuite]" guice-stage="DEVELOPMENT">
+  <parameter name="Username" value="KovidMehta"/>
+  <parameter name="Environment" value="Production"/>
+  <parameter name="HostName" value="BoonSupply"/>
+  <parameter name="Browser" value="Edge"/>
+  <test thread-count="5" name="BoonSupplyTest(failed)">
+    <classes>
+      <class name="boonSupplyTests.TestRunner">
+        <methods>
+          <include name="LoginToBoonSupply" invocation-numbers="0 1"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="DriverInitialization"/>
+          <include name="ValidateCheckoutPageFeatures"/>
+          <include name="teardown"/>
+          <include name="UpdateAccountInformation" invocation-numbers="0"/>
+          <include name="getTheNumberOfFundraiser" invocation-numbers="0"/>
+          <include name="CreateNewAccount" invocation-numbers="0"/>
+          <include name="GetFeaturedFundRaisers"/>
+          <include name="AddA25DollarItemInCart"/>
+          <include name="AddMultipleItemsInCart"/>
+          <include name="GetTrendingItemsforShopping"/>
+        </methods>
+      </class> <!-- boonSupplyTests.TestRunner -->
+    </classes>
+  </test> <!-- BoonSupplyTest(failed) -->
+</suite> <!-- Failed suite [BoonSupplySuite] -->

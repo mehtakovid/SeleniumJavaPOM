@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-BoonSupplySuite" class="navigator-link">
+              <span class="suite-name border-failed">BoonSupplySuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-BoonSupplySuite" class="navigator-link ">
+                    <span>C:\Users\komehta\eclipse-workspace\boonSupplyJavaPOM\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-BoonSupplySuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-BoonSupplySuite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-BoonSupplySuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-BoonSupplySuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-BoonSupplySuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-BoonSupplySuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 5 failed,  7 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BoonSupplySuite" class="hide-methods failed suite-BoonSupplySuite"> (hide)</a> <!-- hide-methods failed suite-BoonSupplySuite -->
+                      <a href="#" panel-name="suite-BoonSupplySuite" class="show-methods failed suite-BoonSupplySuite"> (show)</a> <!-- show-methods failed suite-BoonSupplySuite -->
+                    </span>
+                    <div class="method-list-content failed suite-BoonSupplySuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="CreateNewAccount(Kovid, Mehta, kovidmehta10@gmail.com, Khardungla@18)">CreateNewAccount(Kovid, Mehta, kovidmehta10@gmail.com, Khardungla@18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="LoginToBoonSupply(dwaynewade@getnada.com, random@124)">LoginToBoonSupply(dwaynewade@getnada.com, random@124)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="LoginToBoonSupply(kovidmehta10@gmail.com, Khardungla@18)">LoginToBoonSupply(kovidmehta10@gmail.com, Khardungla@18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="UpdateAccountInformation(kovidmehta10@gmail.com, Khardungla@18, Saratoga Avenue, San Jose, California, 94107)">UpdateAccountInformation(kovidmehta10@gmail.com, Khardungla@18, Saratoga Avenue, San Jose, California, 94107)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="getTheNumberOfFundraiser(Tampa)">getTheNumberOfFundraiser(Tampa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BoonSupplySuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-BoonSupplySuite" class="hide-methods skipped suite-BoonSupplySuite"> (hide)</a> <!-- hide-methods skipped suite-BoonSupplySuite -->
+                      <a href="#" panel-name="suite-BoonSupplySuite" class="show-methods skipped suite-BoonSupplySuite"> (show)</a> <!-- show-methods skipped suite-BoonSupplySuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-BoonSupplySuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="AddA25DollarItemInCart">AddA25DollarItemInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="AddMultipleItemsInCart">AddMultipleItemsInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="GetFeaturedFundRaisers">GetFeaturedFundRaisers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="GetTrendingItemsforShopping">GetTrendingItemsforShopping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="ValidateCheckoutPageFeatures">ValidateCheckoutPageFeatures</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="getTheNumberOfFundraiser">getTheNumberOfFundraiser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="getTheNumberOfFundraiser">getTheNumberOfFundraiser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-BoonSupplySuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BoonSupplySuite" class="hide-methods passed suite-BoonSupplySuite"> (hide)</a> <!-- hide-methods passed suite-BoonSupplySuite -->
+                      <a href="#" panel-name="suite-BoonSupplySuite" class="show-methods passed suite-BoonSupplySuite"> (show)</a> <!-- show-methods passed suite-BoonSupplySuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BoonSupplySuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="SearchAFundraiser(New York)">SearchAFundraiser(New York)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="SearchAFundraiser(Orlando)">SearchAFundraiser(Orlando)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BoonSupplySuite" title="boonSupplyTests.TestRunner" class="method navigator-link" hash-for-method="SearchAFundraiser(Tampa)">SearchAFundraiser(Tampa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BoonSupplySuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BoonSupplySuite" class="panel BoonSupplySuite">
+          <div class="suite-BoonSupplySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">boonSupplyTests.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateNewAccount(Kovid, Mehta, kovidmehta10@gmail.com, Khardungla@18)">
+                  </a> <!-- CreateNewAccount(Kovid, Mehta, kovidmehta10@gmail.com, Khardungla@18) -->
+                  <span class="method-name">CreateNewAccount</span>
+                  <span class="parameters">(Kovid, Mehta, kovidmehta10@gmail.com, Khardungla@18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: There is an Exception. Please check the functionality manually.
+	at boonSupplyTests.TestRunner.CreateNewAccount(TestRunner.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginToBoonSupply(dwaynewade@getnada.com, random@124)">
+                  </a> <!-- LoginToBoonSupply(dwaynewade@getnada.com, random@124) -->
+                  <span class="method-name">LoginToBoonSupply</span>
+                  <span class="parameters">(dwaynewade@getnada.com, random@124)</span>
+                  <div class="stack-trace">java.lang.AssertionError: There is an Exception. Please check the functionality manually.
+	at boonSupplyTests.TestRunner.LoginToBoonSupply(TestRunner.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginToBoonSupply(kovidmehta10@gmail.com, Khardungla@18)">
+                  </a> <!-- LoginToBoonSupply(kovidmehta10@gmail.com, Khardungla@18) -->
+                  <span class="method-name">LoginToBoonSupply</span>
+                  <span class="parameters">(kovidmehta10@gmail.com, Khardungla@18)</span>
+                  <div class="stack-trace">java.lang.AssertionError: There is an Exception. Please check the functionality manually.
+	at boonSupplyTests.TestRunner.LoginToBoonSupply(TestRunner.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateAccountInformation(kovidmehta10@gmail.com, Khardungla@18, Saratoga Avenue, San Jose, California, 94107)">
+                  </a> <!-- UpdateAccountInformation(kovidmehta10@gmail.com, Khardungla@18, Saratoga Avenue, San Jose, California, 94107) -->
+                  <span class="method-name">UpdateAccountInformation</span>
+                  <span class="parameters">(kovidmehta10@gmail.com, Khardungla@18, Saratoga Avenue, San Jose, California, 94107)</span>
+                  <div class="stack-trace">java.lang.AssertionError: There is an Exception. Please check the functionality manually.
+	at boonSupplyTests.TestRunner.UpdateAccountInformation(TestRunner.java:125)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTheNumberOfFundraiser(Tampa)">
+                  </a> <!-- getTheNumberOfFundraiser(Tampa) -->
+                  <span class="method-name">getTheNumberOfFundraiser</span>
+                  <span class="parameters">(Tampa)</span>
+                  <div class="stack-trace">java.lang.AssertionError: There is an Exception. Please check the functionality Manually.
+	at boonSupplyTests.TestRunner.getTheNumberOfFundraiser(TestRunner.java:215)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BoonSupplySuite-class-failed -->
+          <div class="suite-BoonSupplySuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">boonSupplyTests.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddA25DollarItemInCart">
+                  </a> <!-- AddA25DollarItemInCart -->
+                  <span class="method-name">AddA25DollarItemInCart</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddMultipleItemsInCart">
+                  </a> <!-- AddMultipleItemsInCart -->
+                  <span class="method-name">AddMultipleItemsInCart</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetFeaturedFundRaisers">
+                  </a> <!-- GetFeaturedFundRaisers -->
+                  <span class="method-name">GetFeaturedFundRaisers</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetTrendingItemsforShopping">
+                  </a> <!-- GetTrendingItemsforShopping -->
+                  <span class="method-name">GetTrendingItemsforShopping</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateCheckoutPageFeatures">
+                  </a> <!-- ValidateCheckoutPageFeatures -->
+                  <span class="method-name">ValidateCheckoutPageFeatures</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTheNumberOfFundraiser">
+                  </a> <!-- getTheNumberOfFundraiser -->
+                  <span class="method-name">getTheNumberOfFundraiser</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTheNumberOfFundraiser">
+                  </a> <!-- getTheNumberOfFundraiser -->
+                  <span class="method-name">getTheNumberOfFundraiser</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: A window size operation failed because the window is not currently available (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-KOMEHTA-W1&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {InPrivate: false, acceptSslCerts: true, applicationCacheEnabled: true, browserName: MicrosoftEdge, browserVersion: 42.17134.1.0, javascriptEnabled: true, locationContextEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10, takesElementScreenshot: true, takesScreenshot: true, webStorageEnabled: true}
+Session ID: A74F3C25-8DDB-4B39-9F7A-A8C1F7ADEA1A
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at boonSupplyTests.BaseConfigurationClass.DriverInitialization(BaseConfigurationClass.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BoonSupplySuite-class-skipped -->
+          <div class="suite-BoonSupplySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">boonSupplyTests.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchAFundraiser(New York)">
+                  </a> <!-- SearchAFundraiser(New York) -->
+                  <span class="method-name">SearchAFundraiser</span>
+                  <span class="parameters">(New York)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchAFundraiser(Orlando)">
+                  </a> <!-- SearchAFundraiser(Orlando) -->
+                  <span class="method-name">SearchAFundraiser</span>
+                  <span class="parameters">(Orlando)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchAFundraiser(Tampa)">
+                  </a> <!-- SearchAFundraiser(Tampa) -->
+                  <span class="method-name">SearchAFundraiser</span>
+                  <span class="parameters">(Tampa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BoonSupplySuite-class-passed -->
+        </div> <!-- panel BoonSupplySuite -->
+        <div panel-name="test-xml-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\komehta\eclipse-workspace\boonSupplyJavaPOM\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;BoonSupplySuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;Username&quot; value=&quot;KovidMehta&quot;/&gt;
+  &lt;parameter name=&quot;Environment&quot; value=&quot;Production&quot;/&gt;
+  &lt;parameter name=&quot;HostName&quot; value=&quot;BoonSupply&quot;/&gt;
+  &lt;parameter name=&quot;Browser&quot; value=&quot;Edge&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BoonSupplyTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;boonSupplyTests.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BoonSupplyTest --&gt;
+&lt;/suite&gt; &lt;!-- BoonSupplySuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BoonSupplySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BoonSupplyTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BoonSupplySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddA25DollarItemInCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddMultipleItemsInCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateNewAccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">GetFeaturedFundRaisers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">GetTrendingItemsforShopping</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginToBoonSupply</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SearchAFundraiser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">UpdateAccountInformation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ValidateCheckoutPageFeatures</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTheNumberOfFundraiser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddA25DollarItemInCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddMultipleItemsInCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateNewAccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">GetFeaturedFundRaisers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">GetTrendingItemsforShopping</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginToBoonSupply</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SearchAFundraiser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">UpdateAccountInformation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTheNumberOfFundraiser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BoonSupplySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BoonSupplySuite');
+function tableData_BoonSupplySuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LoginToBoonSupply')
+data.setCell(0, 2, 'boonSupplyTests.TestRunner')
+data.setCell(0, 3, 20461);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginToBoonSupply')
+data.setCell(1, 2, 'boonSupplyTests.TestRunner')
+data.setCell(1, 3, 20417);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UpdateAccountInformation')
+data.setCell(2, 2, 'boonSupplyTests.TestRunner')
+data.setCell(2, 3, 20336);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CreateNewAccount')
+data.setCell(3, 2, 'boonSupplyTests.TestRunner')
+data.setCell(3, 3, 20291);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SearchAFundraiser')
+data.setCell(4, 2, 'boonSupplyTests.TestRunner')
+data.setCell(4, 3, 8948);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SearchAFundraiser')
+data.setCell(5, 2, 'boonSupplyTests.TestRunner')
+data.setCell(5, 3, 8207);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getTheNumberOfFundraiser')
+data.setCell(6, 2, 'boonSupplyTests.TestRunner')
+data.setCell(6, 3, 8207);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SearchAFundraiser')
+data.setCell(7, 2, 'boonSupplyTests.TestRunner')
+data.setCell(7, 3, 8204);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ValidateCheckoutPageFeatures')
+data.setCell(8, 2, 'boonSupplyTests.TestRunner')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'GetFeaturedFundRaisers')
+data.setCell(9, 2, 'boonSupplyTests.TestRunner')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getTheNumberOfFundraiser')
+data.setCell(10, 2, 'boonSupplyTests.TestRunner')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getTheNumberOfFundraiser')
+data.setCell(11, 2, 'boonSupplyTests.TestRunner')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'AddMultipleItemsInCart')
+data.setCell(12, 2, 'boonSupplyTests.TestRunner')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'GetTrendingItemsforShopping')
+data.setCell(13, 2, 'boonSupplyTests.TestRunner')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'AddA25DollarItemInCart')
+data.setCell(14, 2, 'boonSupplyTests.TestRunner')
+data.setCell(14, 3, 0);
+window.suiteTableData['BoonSupplySuite']= { tableData: data, tableDiv: 'times-div-BoonSupplySuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-BoonSupplySuite">
+              </div> <!-- times-div-BoonSupplySuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BoonSupplySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">boonSupplyTests.TestRunner</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">CloseFundRaiser</span>
+                <br/>
+                <span class="ignored-method-name">StartNewFundRaiserWithNewUser</span>
+                <br/>
+                <span class="ignored-method-name">CancelMyAccount</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BoonSupplySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">boonSupplyTests.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startReport(KovidMehta, BoonSupply, Production)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">1579 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginToBoonSupply(kovidmehta10@gmail.com, Khardungla@18)</span>
+                <span class="method-start">12938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">33395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">34758 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginToBoonSupply(dwaynewade@getnada.com, random@124)</span>
+                <span class="method-start">42999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">63470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">65340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateNewAccount(Kovid, Mehta, kovidmehta10@gmail.com, Khardungla@18)</span>
+                <span class="method-start">72944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">93240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">94415 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UpdateAccountInformation(kovidmehta10@gmail.com, Khardungla@18, Saratoga Avenue, San Jose, California, 94107)</span>
+                <span class="method-start">101391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">121730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">123793 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchAFundraiser(Tampa)</span>
+                <span class="method-start">131945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">140897 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">142601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchAFundraiser(Orlando)</span>
+                <span class="method-start">149322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">157532 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">159297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SearchAFundraiser(New York)</span>
+                <span class="method-start">166864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">175073 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">176619 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTheNumberOfFundraiser(Tampa)</span>
+                <span class="method-start">183580 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">191790 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DriverInitialization(Edge)</span>
+                <span class="method-start">193043 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getTheNumberOfFundraiser</span>
+                <span class="method-start">199150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199155 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization</span>
+                <span class="method-start">199157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getTheNumberOfFundraiser</span>
+                <span class="method-start">199158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization</span>
+                <span class="method-start">199169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetFeaturedFundRaisers</span>
+                <span class="method-start">199170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199179 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization</span>
+                <span class="method-start">199183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddA25DollarItemInCart</span>
+                <span class="method-start">199186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199190 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization</span>
+                <span class="method-start">199193 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddMultipleItemsInCart</span>
+                <span class="method-start">199194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199201 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization</span>
+                <span class="method-start">199202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateCheckoutPageFeatures</span>
+                <span class="method-start">199203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">DriverInitialization</span>
+                <span class="method-start">199208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetTrendingItemsforShopping</span>
+                <span class="method-start">199210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">199217 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">199695 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
